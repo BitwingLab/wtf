@@ -12,7 +12,7 @@ import sys
 SUPPORTED = ("zsh", "bash")
 
 _ZSH = r"""
-# huh / wtf shell integration — https://github.com/<you>/huh
+# huh / wtf shell integration — https://github.com/BitwingLab/wtf
 __huh_preexec() {
   case "$1" in
     wtf|wtf\ *|huh|huh\ *) __huh_skip=1 ;;
@@ -41,7 +41,7 @@ precmd_functions=(__huh_precmd ${precmd_functions:#__huh_precmd})
 """
 
 _BASH = r"""
-# huh / wtf shell integration — https://github.com/<you>/huh
+# huh / wtf shell integration — https://github.com/BitwingLab/wtf
 __huh_prompt() {
   local s=$? c
   c=$(HISTTIMEFORMAT= builtin history 1 2>/dev/null | sed -E 's/^ *[0-9]+\*? *//')

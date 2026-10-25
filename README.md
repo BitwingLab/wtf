@@ -5,7 +5,7 @@ When a command fails, type `wtf`. It explains the error in plain English and sug
 ## Install
 
 ```bash
-uv tool install git+https://github.com/<you>/huh
+uv tool install git+https://github.com/BitwingLab/wtf
 wtf setup
 ```
 
